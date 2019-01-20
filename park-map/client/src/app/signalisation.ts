@@ -22,7 +22,7 @@ export class Signalisation {
   }
 
   public getCode(): string {
-    return this.properties.getCode()
+    return this.properties.getCode();
   }
 
 }

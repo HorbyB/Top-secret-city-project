@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Message } from "../../../common/communication/message";
-import { BasicService } from "./basic.service";
 import { ApiService } from "./api.service";
+import { BasicService } from "./basic.service";
+import {ParkingData} from "./parking-data";
 import { Signalisation } from "./signalisation";
 
 @Component({
@@ -11,7 +12,7 @@ import { Signalisation } from "./signalisation";
   providers: [ApiService],
 })
 export class AppComponent implements OnInit {
-    public _postsArray: Signalisation[];
+    public _postsArray: ParkingData;
 
     public constructor(/*private basicService: BasicService,*/ private apiSerivce: ApiService) { }
 

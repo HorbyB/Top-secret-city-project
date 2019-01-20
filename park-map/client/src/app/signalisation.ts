@@ -1,6 +1,6 @@
 import {Geometry} from "./geometry";
 import {Properties} from "./properties";
-
+/*
 export class Signalisation {
   private type: string;
   private geometry: Geometry;
@@ -24,5 +24,12 @@ export class Signalisation {
   public getCode(): string {
     return this.properties.getCode();
   }
+
+}
+*/
+export interface Signalisation {
+  type: string;
+  geometry: Geometry;
+  properties: Properties;
 
 }

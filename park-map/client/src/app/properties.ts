@@ -1,4 +1,4 @@
-/*
+
 export interface Properties {
   POTEAU_ID_POT: number;
   PANNEAU_ID_PAN: number;
@@ -20,8 +20,8 @@ export interface Properties {
   NOM_ARR: string;
 
 }
-*/
 
+/*
 export class Properties {
   private POTEAU_ID_POT: number;
   private PANNEAU_ID_PAN: number;
@@ -67,11 +67,11 @@ export class Properties {
   this.CODE_RPA = CODE_RPA;
   this.FLECHE_PAN = FLECHE_PAN;
   this.TOPONYME_PAN = TOPONYME_PAN;
-  this.POTEAU_VERSION_POT = POTEAU_VERSION_POT; //
-  this.DATE_CONCEPTION_POT = DATE_CONCEPTION_POT; //
-  this.PAS_SUR_RUE = PAS_SUR_RUE; //
-  this.DESCRIPTION_REP = DESCRIPTION_REP; //
-  this.DESCRIPTION_RTP = DESCRIPTION_RTP; //
+  this.POTEAU_VERSION_POT = POTEAU_VERSION_POT;
+  this.DATE_CONCEPTION_POT = DATE_CONCEPTION_POT;
+  this.PAS_SUR_RUE = PAS_SUR_RUE;
+  this.DESCRIPTION_REP = DESCRIPTION_REP;
+  this.DESCRIPTION_RTP = DESCRIPTION_RTP;
   this.X_EPSG32188 = X_EPSG32188;
   this.Y_EPSG32188 = Y_EPSG32188;
   this.Longitude = Longitude;
@@ -93,3 +93,4 @@ export class Properties {
   }
 
 }
+*/

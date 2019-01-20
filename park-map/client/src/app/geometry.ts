@@ -1,3 +1,10 @@
+export interface Geometry {
+  type: string;
+  coordinates: [number, number];
+
+}
+
+/*
 export class Geometry {
   private type: string;
   private coordinates: [number, number];
@@ -21,3 +28,4 @@ export class Geometry {
   }
 
 }
+*/

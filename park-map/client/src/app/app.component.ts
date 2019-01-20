@@ -1,19 +1,33 @@
 import { Component, OnInit } from "@angular/core";
 import { Message } from "../../../common/communication/message";
 import { BasicService } from "./basic.service";
+import { ApiService } from "./api.service";
+import { Signalisation } from "./signalisation";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
+  providers: [ApiService],
 })
 export class AppComponent implements OnInit {
-    public constructor(private basicService: BasicService) { }
+    public _postsArray: Signalisation[];
 
-    public readonly title: string = "LOG2990";
-    public message: string;
+    public constructor(/*private basicService: BasicService,*/ private apiSerivce: ApiService) { }
+
+    //public readonly title: string = "LOG2990";
+    //public message: string;
+
+    public getPosts(): void {
+    this.apiSerivce.getPosts().
+    subscribe(
+      (resultArray) => this._postsArray =
+        resultArray,
+      );
+  }
 
     public ngOnInit(): void {
-        this.basicService.basicGet().subscribe((message: Message) => this.message = message.title + message.body);
+        //this.basicService.basicGet().subscribe((message: Message) => this.message = message.title + message.body);
+        this.getPosts();
     }
 }
